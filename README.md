@@ -1,50 +1,54 @@
-# Welcome to your Expo app 👋
+# FlashNote
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[![Version](https://img.shields.io/badge/version-0.1.0-blue?style=flat-square)](https://github.com/yourusername/flashnote)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/yourusername/flashnote/actions)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Mobile-blueviolet?style=flat-square)](#)
+[![Maintained](https://img.shields.io/badge/maintained-yes-success?style=flat-square)](#)
 
-## Get started
+FlashNote is an AI-powered flashcard and note-taking application specifically built for STEM students. It provides a streamlined experience to capture quick notes, generate intelligent flashcards, and review using a spaced repetition system. Designed for mobile-first use, with rich support for math, code, and science-related content.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- Note editor for STEM concepts with support for math and code
+- AI-powered conversion of notes into flashcards
+- Manual flashcard creation and deck management
+- Tagging and filtering flashcards by topic or difficulty
+- Spaced repetition system for intelligent review
+- AI search to find definitions, explanations, and relevant concepts
+- Offline-first architecture with optional cloud sync `more focus on offline cloud sync will be optional`
+- Lightweight, distraction-free UI
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## AI Capabilities
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+| Capability                 | Description                                                    |
+|---------------------------|----------------------------------------------------------------|
+| Note to Flashcard         | Automatically generates Q&A-style flashcards from written notes |
+| AI Search Integration     | Ask questions like "What is Ohm's Law?" and get concise answers |
+| Context Tagging           | Extracts tags and key ideas for better organization             |
+| Summarization             | Provides summaries of long notes for quick recall               |
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## Tech Stack
 
-When you're ready, run:
+- **Frontend:** React Native + TypeScript
+- **Backend:** Firebase or Supabase
+- **Local Storage:** SQLite or RealmDB
+- **Math Rendering:** KaTeX or MathJax
+- **Code Highlighting:** Prism.js
+- **AI Integration:** OpenAI API or local NLP (configurable)
+
+---
+
+## Installation
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone https://github.com/yourusername/SORTOF.git
+cd SORTOF
+npm install
+npm run start
