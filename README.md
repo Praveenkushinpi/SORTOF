@@ -1,4 +1,16 @@
-# FlashNote
+```
+ ________  ________  ________  _________  ________  ________ 
+|\   ____\|\   __  \|\   __  \|\___   ___\\   __  \|\  _____\
+\ \  \___|\ \  \|\  \ \  \|\  \|___ \  \_\ \  \|\  \ \  \__/ 
+ \ \_____  \ \  \\\  \ \   _  _\   \ \  \ \ \  \\\  \ \   __\
+  \|____|\  \ \  \\\  \ \  \\  \|   \ \  \ \ \  \\\  \ \  \_|
+    ____\_\  \ \_______\ \__\\ _\    \ \__\ \ \_______\ \__\ 
+   |\_________\|_______|\|__|\|__|    \|__|  \|_______|\|__| 
+   \|_________|                                              
+                                                             
+
+```
+# SORTOF
 
 [![Version](https://img.shields.io/badge/version-0.1.0-blue?style=flat-square)](https://github.com/yourusername/flashnote)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/yourusername/flashnote/actions)
