@@ -1,8 +1,8 @@
 @import "tailwindcss";
-
+@plugin "tailwindcss-motion";
 :root {
   --background: #ffffff;
-  --foreground: #000000;
+  --foreground: #171717;
 }
 
 @theme inline {
