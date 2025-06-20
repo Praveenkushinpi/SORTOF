@@ -79,7 +79,6 @@
 
 [![Version](https://img.shields.io/badge/version-0.1.0-blue?style=flat-square)](https://github.com/yourusername/flashnote)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/yourusername/flashnote/actions)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Mobile-blueviolet?style=flat-square)](#)
 [![Maintained](https://img.shields.io/badge/maintained-yes-success?style=flat-square)](#)
 
