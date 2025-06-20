@@ -30,7 +30,7 @@ export default function Footer() {
               <Link href="/features" className="hover:underline">Features</Link>
             </li>
             <li>
-              <Link href="/waitlist" className="hover:underline">Join Waitlist</Link>
+              <Link href="/Waitlist" className="hover:underline">Join Waitlist</Link>
             </li>
             <li>
               <Link href="/privacyPolicy" className="hover:underline">Privacy Policy</Link>
@@ -50,7 +50,7 @@ export default function Footer() {
     <p className="text-sm text-gray-500 text-left">
       Created with{" "}
       <span className="text-red-600 font-semibold inline-block motion-preset-pulse ">
-        💖
+        🖤
       </span>{" "}
       by SORTEDOF
     </p>
