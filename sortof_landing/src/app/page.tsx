@@ -14,10 +14,10 @@ export default function HomePage() {
         <Navigation />
         <div className="flex-1 flex flex-col justify-center px-6 py-12 lg:px-12 lg:py-0">
           <div className="max-w-2xl mx-auto lg:mx-0">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-9xl font-bold leading-tight px-2 motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-opacity-in-[1%] motion-blur-in-[100px] [2.25s]">
+            <h1 className="text-white text-4xl sm:text-6xl lg:text-7xl xl:text-9xl font-bold leading-tight px-2 motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-opacity-in-[1%] motion-blur-in-[100px] [2.25s]">
               SORTEDOF
             </h1>
-            <p className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl mt-4 lg:mt-6 leading-relaxed px-2 motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-opacity-in-[1%] motion-blur-in-[100px] [2.25s]">
+            <p className="text-white text-xl sm:text-2xl lg:text-3xl xl:text-4xl mt-4 lg:mt-6 leading-relaxed px-2 motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-opacity-in-[1%] motion-blur-in-[100px] [2.25s]">
               One Hand Solution For Your Everyday Notes
             </p>
 
@@ -48,7 +48,7 @@ export default function HomePage() {
         <div className="flex-1 flex flex-col justify-center px-6 py-12 lg:px-12 lg:py-0">
           <div className="max-w-2xl mx-auto lg:mx-0">
             <ScrollAnimate>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-left px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">
+              <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-left px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">
                 What we are doing?
               </h1>
             </ScrollAnimate>
@@ -65,7 +65,7 @@ export default function HomePage() {
             <div className="mt-8 lg:mt-12 space-y-6">
               <div className="flex items-start space-x-4 px-2">
                 <ScrollAnimate>
-                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">
+                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
@@ -73,7 +73,7 @@ export default function HomePage() {
                 </ScrollAnimate>
                 <div>                
                   <ScrollAnimate>
-                    <h3 className="text-lg font-semibold px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">Quick Capture</h3>
+                    <h3 className="text-white text-lg font-semibold px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">Quick Capture</h3>
                     <p className="text-gray-600 px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">Instantly capture your thoughts with one-handed operation</p>
                   </ScrollAnimate>
                 </div>
@@ -81,7 +81,7 @@ export default function HomePage() {
 
               <div className="flex items-start space-x-4 px-2">
                 <ScrollAnimate>
-                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">
+                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>
@@ -89,7 +89,7 @@ export default function HomePage() {
                 </ScrollAnimate>
                 <div>
                   <ScrollAnimate>
-                    <h3 className="text-lg font-semibold px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">Mobile First</h3>
+                    <h3 className="text-white text-lg font-semibold px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">Mobile First</h3>
                     <p className="text-gray-600 px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">Designed for seamless mobile experience</p>
                   </ScrollAnimate>
                 </div>
@@ -97,7 +97,7 @@ export default function HomePage() {
                 
               <div className="flex items-start space-x-4 px-2">
                 <ScrollAnimate>
-                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">
+                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -105,7 +105,7 @@ export default function HomePage() {
                 </ScrollAnimate>
                 <div>
                   <ScrollAnimate>
-                    <h3 className="text-lg font-semibold px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">Stay Organized</h3>
+                    <h3 className="text-white text-lg font-semibold px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">Stay Organized</h3>
                     <p className="text-gray-600 px-2 motion-translate-x-in-[-100%] motion-translate-y-in-[0%] motion-opacity-in-[1%] motion-blur-in-[100px] motion-duration-[2.25s]">Keep your ideas and tasks perfectly organized</p>
                   </ScrollAnimate>
                 </div>

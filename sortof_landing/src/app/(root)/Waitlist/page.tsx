@@ -1,22 +1,26 @@
 "use client";
+
 import CustomCursor from "@/components/customcursor";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import {z} from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { formSchema } from "@/lib/schemas";
+import {send} from "@/lib/email";
+import {Button} from "@/components/ui/button"
+import {Form,FormControl,FormDescription,FormField,FormItem,FormLabel,FormMessage} from "@/components/ui/form";
+import { Input } from "@/components/ui/input"
 export default function Waitlist() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      username: "",
+      email: "",
+    },
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Name submitted:", name)
-    console.log("Email submitted:", email);
-    setSubmitted(true);
-    setSubmitted(true)
-    setEmail("");
-  };
 
 const scatteredImages = [
   // Top-left
@@ -50,6 +54,10 @@ const scatteredImages = [
   { src: "/img/people-16.png", className: "top-[10%] right-[50%] -rotate-3 motion-translate-x-in-[40%] motion-translate-y-in-[40%]" },
 ];
 
+function onSubmit(values: z.infer<typeof formSchema>) {
+  send(values);
+}
+
   return (
     <div id="app">
       <CustomCursor />
@@ -73,42 +81,59 @@ const scatteredImages = [
           Be the first to try <strong>SORTEDOF</strong> — your one-hand solution for everyday notes.
         </p>
 
-        {submitted ? (
-          <p className="text-green-400 text-xl font-semibold">🎉 You're on the list!</p>
-        ) : (
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <input
-              type="Name"
-              placeholder="Your name"
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="w-full px-4 py-3 text-white rounded-md focus:outline-none"
-            />
-            <input
-              type="email"
-              placeholder="Your email address"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-3 text-white rounded-md focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="w-full bg-white text-black font-bold py-3 rounded-md hover:bg-gray-200 transition-colors  "
-            >
-              Notify Me
+          
+      
+          
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                <FormField
+                  name="username"
+                  control={form.control}
+                  render={({ field }) => (
+                    <FormItem className="text-left">
+                      <FormLabel className="text-gray-300">Name</FormLabel>
+                      <Input 
+                        {...field} 
+                        placeholder="Your name"
+                        className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white rounded-md focus:outline-none focus:border-white focus:ring-1 focus:ring-white placeholder-gray-400"
+                      />
+                      <FormMessage className="text-red-400" />
+                    </FormItem>
+                  )}
+                />
+                
+                <FormField
+                  name="email"
+                  control={form.control}
+                  render={({ field }) => (
+                    <FormItem className="text-left">
+                      <FormLabel className="text-gray-300">Email</FormLabel>
+                      <Input 
+                        {...field} 
+                        type="email"
+                        placeholder="Your email address"
+                        className="w-full px-4 py-3 bg-transparent border border-gray-600 text-white rounded-md focus:outline-none focus:border-white focus:ring-1 focus:ring-white placeholder-gray-400"
+                      />
+                      <FormMessage className="text-red-400" />
+                    </FormItem>
+                  )}
+                />
+                
+                <Button 
+                  type="submit"
+                  className="w-full bg-white text-black font-bold py-3 rounded-md hover:bg-gray-200 transition-colors"
+                >
+                  Notify Me
+                </Button>
+              </form>
+            </Form>
+          <Link href="/">
+            <button className="mt-6 text-sm text-gray-300 underline hover:text-white transition-colors">
+              ← Back to Home
             </button>
-          </form>
-        )}
-
-        <Link href="/">
-          <button className="mt-6 text-sm text-gray-300 underline hover:text-white transition-colors">
-            ← Back to Home
-          </button>
-        </Link>
+          </Link>
+        </div>
       </div>
-    </div>
     </div>
   );
 }
